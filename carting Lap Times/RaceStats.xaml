@@ -1,0 +1,36 @@
+﻿<Window x:Class="carting_Lap_Times.RaceStats"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:DV="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        Title="RaceStats" Height="597" Width="943" MaxHeight="597" MaxWidth="943" Icon="CheckedFlag.ico" ResizeMode="CanMinimize">
+    <Grid Background="#FFC4D9EB">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Name="btnRemove" Content="Remove this Record" Grid.Column="3" Margin="91,10,10,102" Click="btnRemove_Click"/>
+        <Button Name="btnEdit" Content="Edit Race" Click="btnEdit_Click" Grid.Column="3" Margin="91,45,10,70"/>
+        <Label Name="Label1" Content="Slowest Lap Time:" Margin="10,10,104,102"/>
+        <Label Name="lblSlowestLapTime" Content="Lap Time" Margin="130,10,0,102"/>
+        <Label Name="Label2" Content="Fastest Lap Time:" Margin="15,45,109,70" RenderTransformOrigin="0.491,1.259"/>
+        <Label Name="lblFastestLapTime" Content="Lap Time" Margin="130,45,0,64"/>
+        <Label Name="Label3" Content="Average Lap Time:" Margin="9,85,110,22" />
+        <Label Name="lblAverageLapTime" Content="Lap Time" Margin="129,85,213,31" Grid.ColumnSpan="2"/>
+
+        <DVC:Chart Margin="10,85,14,10" Grid.RowSpan="3" LegendTitle="Legenda"  Background="LightGray" Name="WPFChart" Grid.ColumnSpan="4" Grid.Row="1">
+            <DVC:Chart.Series>
+                <!--Line Mono -->
+                <DVC:ColumnSeries Title="Lap Time" ToolTip="{Binding Value}" IndependentValuePath="Key" DependentValuePath="Value"/>
+            </DVC:Chart.Series>
+        </DVC:Chart>
+    </Grid>
+</Window>

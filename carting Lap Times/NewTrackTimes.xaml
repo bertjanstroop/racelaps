@@ -1,0 +1,78 @@
+﻿<Window x:Class="carting_Lap_Times.NewTrackTimes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:y="clr-namespace:carting_Lap_Times"
+        Title="NewTrackTimes" Height="535" Width="1235.175" MaxWidth="1235.175" MaxHeight="535" ResizeMode="CanMinimize" Icon="CheckedFlag.ico">
+    <Grid Margin="0,0,-6,1" Background="#FFC4D9EB">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Name="Label1" Content="Race Track" HorizontalContentAlignment="Center" Margin="21,10,81,83" />
+        <ComboBox x:Name="cmbRaceTrack" HorizontalContentAlignment="Center" Margin="21,44,90,47" />
+        <Label Name="Label2" HorizontalContentAlignment="Center" Content="Date" Margin="21,94,81,0" />
+        <Calendar Name="RaceDate" Margin="21,10,81,63" Grid.Row="1" Grid.RowSpan="2" />
+        <Label Name="Label3" Content="Time" HorizontalContentAlignment="Center" Margin="21,64,90,31" Grid.Row="2" />
+        <TextBox Name="txtRaceTime" Text="hh:mm" Margin="21,106,81,108" Grid.Row="2" Grid.RowSpan="2" Background="#FFC7C7C7" />
+
+        <Label Name="Lap1" Content="Lap 1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Margin="20,10,193,83" />
+        <TextBox Name="txtLap1" Grid.Column="1" Margin="20,39,193,56" Background="#FFC7C7C7" />
+        <Label Name="Lap2" Content="Lap 2" HorizontalContentAlignment="Center" Grid.Column="1" Margin="140,10,77,83" />
+        <TextBox Name="txtLap2" Grid.Column="1" Margin="140,39,77,56" Background="#FFC7C7C7" />
+        <Label Name="Lap3" Content="Lap 3" Grid.ColumnSpan="2" Grid.Column="1" HorizontalContentAlignment="Center" Margin="251,10,274,83" />
+        <TextBox Name="txtLap3" Grid.ColumnSpan="2" Grid.Column="1" Margin="251,39,274,56" Background="#FFC7C7C7"/>
+        <Label Name="Lap4" Content="Lap 4" Grid.Column="2" Margin="51,10,163,83" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap4" Grid.Column="2" Margin="51,39,163,56" Background="#FFC7C7C7" />
+        <Label Name="Lap5" Content="Lap 5" Grid.Column="2" Margin="166,11,60,83" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap5" Grid.Column="2" Margin="166,39,60,56" Background="#FFC7C7C7"/>
+        <Label Name="Lap6" Content="Lap 6" Grid.ColumnSpan="2" Grid.Column="2" Margin="269,11,251,83" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap6" Grid.ColumnSpan="2" Grid.Column="2" Margin="269,39,251,56" Background="#FFC7C7C7" />
+        <Label Name="Lap7" Content="Lap 7" HorizontalContentAlignment="Center" Grid.Column="3" Margin="72,11,145,83"/>
+        <TextBox Name="txtLap7" Grid.Column="3" Margin="72,39,145,56" Background="#FFC7C7C7"/>
+        <Label Name="Lap8" Content="Lap 8" Grid.Column="3" Margin="181,11,33,83" HorizontalContentAlignment="Center" />
+        <TextBox Name="txtLap8" Grid.Column="3" Margin="181,39,33,56" Background="#FFC7C7C7" />
+
+        <Label Name="Lap9" Content="Lap 9" Grid.Column="1" Margin="20,94,193,0" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap9" Grid.Column="1" Margin="20,10,193,86" Grid.Row="1" Background="#FFC7C7C7"/>
+        <Label Name="Lap10" Content="Lap 10" Grid.Column="1" Margin="140,93,77,0" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap10" Grid.Column="1" Margin="140,10,77,86" Grid.Row="1" Background="#FFC7C7C7"/>
+        <Label Name="Lap11" Content="Lap 11" Grid.ColumnSpan="2" Grid.Column="1" Margin="251,94,274,0" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap11" Grid.ColumnSpan="2" Grid.Column="1" Margin="251,10,274,86" Grid.Row="1" Background="#FFC7C7C7"/>
+        <Label Name="Lap12" Content="Lap 12" Grid.Column="2" Margin="51,93,163,0" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap12" Grid.Column="2" Margin="51,10,163,86" Grid.Row="1" Background="#FFC7C7C7"/>
+        <Label Name="Lap13" Content="Lap 13" Grid.Column="2" Margin="166,94,60,0" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap13" Grid.Column="2" Margin="166,10,60,86" Grid.Row="1" Background="#FFC7C7C7"/>
+        <Label Name="Lap14" Content="Lap 14" Grid.ColumnSpan="2" Grid.Column="2" Margin="269,94,251,0" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap14" Grid.ColumnSpan="2" Grid.Column="2" Margin="269,10,251,86" Grid.Row="1" Background="#FFC7C7C7"/>
+        <Label Name="Lap15" Content="Lap 15" Grid.Column="3" Margin="72,94,145,0" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap15" Grid.Column="3" Margin="72,10,145,86" Grid.Row="1" Background="#FFC7C7C7"/>
+        <Label Name="Lap16" Content="Lap 16" Grid.Column="3" Margin="181,94,33,0" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap16" Grid.Column="3" Margin="181,10,33,86" Grid.Row="1" Background="#FFC7C7C7" />
+
+        <Label Name="Lap17" Content="Lap 17" Grid.Column="1" Margin="20,74,193,20" Grid.Row="1" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap17" Grid.Column="1" Margin="20,108,193,112" Grid.Row="1" Grid.RowSpan="2" Background="#FFC7C7C7" />
+        <Label Name="Lap18" Content="Lap 18" Grid.Column="1" Margin="140,74,77,20" Grid.Row="1" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap18" Grid.Column="1" Margin="140,108,77,112" Grid.Row="1" Grid.RowSpan="2" Background="#FFC7C7C7"/>
+        <Label Name="Lap19" Content="Lap 19" Grid.ColumnSpan="2" Grid.Column="1" Margin="251,74,274,20" Grid.Row="1" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap19" Grid.ColumnSpan="2" Grid.Column="1" Margin="251,108,274,112" Grid.Row="1" Grid.RowSpan="2" Background="#FFC7C7C7" />
+        <Label Name="Lap20" Content="Lap 20" Grid.Column="2" Margin="51,74,163,20" Grid.Row="1" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap20" Grid.Column="2" Margin="51,108,163,112" Grid.Row="1" Grid.RowSpan="2" Background="#FFC7C7C7" />
+        <Label Name="Lap21" Content="Lap 21" Grid.Column="2" Margin="166,74,60,20" Grid.Row="1" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap21" Grid.Column="2" Margin="166,108,60,112" Grid.Row="1" Grid.RowSpan="2" Background="#FFC7C7C7" />
+        <Label Name="Lap22" Content="Lap 22" Grid.ColumnSpan="2" Grid.Column="2" Margin="269,74,251,20" Grid.Row="1" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtLap22" Grid.ColumnSpan="2" Grid.Column="2" Margin="269,108,251,112" Grid.Row="1" Grid.RowSpan="2" Background="#FFC7C7C7"/>
+        <Button Name="btnSave" Content="Save" Grid.Column="3" Margin="198,72,10,17" Grid.Row="3" Click="btnSave_Click"/>
+        <Label Name="Label4" Content="Note" Grid.Column="1" Margin="20,63,274,31" Grid.Row="2" HorizontalContentAlignment="Center" Grid.ColumnSpan="2"/>
+        <TextBox Name="txtNote" Text="N.A." Grid.ColumnSpan="2" Grid.Column="1" Margin="20,106,274,17" Grid.Row="2" Grid.RowSpan="2" TextWrapping="Wrap" AcceptsReturn="True" Background="#FFC7C7C7" />
+        <TextBox Name="textbox" Text="Fill in 0 at unused Laps, comma numbers like 30,34 should be enterd as 30.34" IsReadOnly="True" Grid.ColumnSpan="2" Grid.Column="2" Margin="51,104,120,108" Grid.Row="2" Grid.RowSpan="2" Background="#FFC7C7C7"/>
+
+    </Grid>
+</Window>
