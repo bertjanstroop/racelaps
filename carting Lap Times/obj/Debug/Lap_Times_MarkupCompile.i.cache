@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\laptimes\carting Lap Times\obj\Debug\
+D:\racelaps\carting Lap Times\obj\Debug\
 carting_Lap_Times
 none
 false
 DEBUG;TRACE
-D:\laptimes\carting Lap Times\App.xaml
+D:\racelaps\carting Lap Times\App.xaml
 6-655527836
 
 161270008838
-16150008603
+16-1076949935
 MainWindow.xaml;ManageRaceTracks.xaml;EditTrackTime.xaml;NewTrackTimes.xaml;RaceStats.xaml;Search.xaml;
 
 False
